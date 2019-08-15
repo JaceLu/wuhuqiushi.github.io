@@ -11,7 +11,9 @@
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="./content/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./content/css/swiper.min.css">
     <link rel="stylesheet" href="./content/css/qiushi.css">
+    <script src="./content/js/swiper.min.js"></script>
 </head>
 
 <body>
@@ -97,6 +99,34 @@
                     </div>
                 </div>
             </section>
+            <section>
+                <h2 class="section-title">合作案例</h2>
+                <div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="img-responsive" src="./content/img/product/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-responsive" src="./content/img/product/2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-responsive" src="./content/img/product/3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-responsive" src="./content/img/product/4.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <div class="swiper-pagination"></div>
+                        <!-- 如果需要导航按钮 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <!-- 如果需要滚动条 -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <div class="footer">
@@ -108,6 +138,25 @@
             </div>
         </div>
     </div>
+    <script>
+
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 4,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loopFillGroupWithBlank: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
 </body>
 
 </html>
