@@ -11,13 +11,14 @@
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="./content/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./content/css/font-awesome.min.css">
     <link rel="stylesheet" href="./content/css/swiper.min.css">
     <link rel="stylesheet" href="./content/css/qiushi.css">
     <script src="./content/js/swiper.min.js"></script>
 </head>
 
 <body>
-    <nav class="header navbar navbar-default">
+    <nav class="header navbar navbar-default navbar-wrapper">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -28,34 +29,51 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
-                    <img src="./content/img/qs.png" alt="芜湖求是新型建材有限公司" />求是新材
+                <a class="navbar-brand" href="index.html">
+                    <img src="./content/img/qs.png" alt="芜湖求是新型建材有限公司" />芜湖求是新型建材有限公司
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">关于我们</a></li>
-                    <li><a href="#">产品介绍</a></li>
-                    <li><a href="#">工程案例</a></li>
-                    <li><a href="#">联系我们</a></li>
+                    <li class="menuItem"><a href="#about">关于我们</a></li>
+                    <li class="menuItem"><a href="#product">产品介绍</a></li>
+                    <li class="menuItem"><a href="#case">工程案例</a></li>
+                    <li class="menuItem"><a href="#contact">联系我们</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-    <div class="banner">
+    <div class="carousel">
         <div class="jumbotron" style="background-image: url(./content/img/1.jpg)">
             <div class="container">
-                <h1>求是新材</h1>
+                <h1>求是新型建材</h1>
                 <p>专业技术方案，高效优质服务</p>
                 <p>高品质产品为组合，将防腐领略做精做强</p>
             </div>
         </div>
     </div>
     <div class="content">
+        <section class="bg_gray" id="about">
+            <div class="container">
+                <div class="about">
+                    <div class="about__left">
+                        <h2 class="section-title">公司介绍</h2>
+                        <p>芜湖求是新型建材有限公司成立于2008年，坐落于长江之畔的安徽省芜湖市，是一家国内领先的防腐板、采光板等产品研发、生产、销售、技术咨询等一体化的服务型企业。</p>
+                        <p>我们长期扎根建筑领域，专业从事建材行业，以客户的建筑问题为导向，提供优质专业的解决方案和建筑技术服务，致力于为客户生产优质的钢结构屋面维护材料，
+                            我们始终以解决客户的问题和困难作为企业的服务宗旨。</p>
+                    </div>
+                    <div class="about__right">
+                        <h2>芜湖求是新型建材有限公司</h2>
+                        <p>专业技术方案，高效优质服务</p>
+                        <p>Professional Technical Scheme, High Efficiency and High Quality Service</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div class="container">
             <section id="product">
-                <h2 class="section-title">产品介绍</h2>
+                <h2 class="section-title">— 产品介绍 —</h2>
                 <div class="row">
                     <div class="col-sm-6 col-md-3">
                         <div class="box">
@@ -63,7 +81,7 @@
                                 <img src="./content/img/product/1.jpg" alt="">
                             </div>
                             <div class="box__bd">
-                                <a class="btn btn-primary-o" href="">采光板</a>
+                                <a class="btn btn-primary-o" href="product.html">采光板</a>
                             </div>
                         </div>
                     </div>
@@ -73,7 +91,7 @@
                                 <img src="./content/img/product/2.jpg" alt="">
                             </div>
                             <div class="box__bd">
-                                <a class="btn btn-primary-o" href="">防腐板</a>
+                                <a class="btn btn-primary-o" href="product.html">FRP防腐板</a>
                             </div>
                         </div>
                     </div>
@@ -83,7 +101,7 @@
                                 <img src="./content/img/product/3.jpg" alt="">
                             </div>
                             <div class="box__bd">
-                                <a class="btn btn-primary-o" href="">覆膜刚板</a>
+                                <a class="btn btn-primary-o" href="product.html">覆膜防腐板</a>
                             </div>
                         </div>
                     </div>
@@ -93,28 +111,43 @@
                                 <img src="./content/img/product/4.jpg" alt="">
                             </div>
                             <div class="box__bd">
-                                <a class="btn btn-primary-o" href="">防腐檩条</a>
+                                <a class="btn btn-primary-o" href="product.html">防水透气膜</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section>
-                <h2 class="section-title">合作案例</h2>
+            <div class="banner" style="background-image: url(./content/img/banner.jpg)">
+                <h2>理解客户需求，为客户创造更多价值</h2>
+            </div>
+            <section id="case">
+                <h2 class="section-title">— 工程案例 —</h2>
                 <div>
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img class="img-responsive" src="./content/img/product/1.jpg" alt="">
+                                <img class="img-responsive" src="./content/img/case/1.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img class="img-responsive" src="./content/img/product/2.jpg" alt="">
+                                <img class="img-responsive" src="./content/img/case/2.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img class="img-responsive" src="./content/img/product/3.jpg" alt="">
+                                <img class="img-responsive" src="./content/img/case/3.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img class="img-responsive" src="./content/img/product/4.jpg" alt="">
+                                <img class="img-responsive" src="./content/img/case/4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-responsive" src="./content/img/case/5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-responsive" src="./content/img/case/6.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-responsive" src="./content/img/case/7.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-responsive" src="./content/img/case/8.jpg" alt="">
                             </div>
                         </div>
                         <!-- 如果需要分页器 -->
@@ -127,7 +160,75 @@
                     </div>
                 </div>
             </section>
+
         </div>
+        <section class="bg_gray" id="contact">
+            <div class="container">
+                <div class="contact">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="">
+                                <h2>联系我们</h2>
+                                <p>
+                                    <icon class="fa fa-phone text_red"></icon><a href="tel:13966796590"
+                                        target="_blank">13966796590</a>
+                                </p>
+                                <p>
+                                    <icon class="fa fa-fax text_blue"></icon><a>0553-411 3212</a>
+                                </p>
+                                <p>
+                                    <icon class="fa fa-envelope text_green"></icon><a href="972660469@qq.com"
+                                        target="_blank">972660469@qq.com</a>
+                                </p>
+                                <p>
+                                    <icon class="fa fa-map text_orange"></icon><a
+                                        href="https://map.baidu.com/poi/金湾工业园/@13180505.876188468,3662320.16,19z?uid=17e538b8655ce522ea56fa3a&primaryUid=17135388209294684489&ugc_type=3&ugc_ver=1&device_ratio=1&compat=1&querytype=detailConInfo&da_src=shareurl"
+                                        target="_blank">芜湖市鸠江区金湾工业园</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div>
+                                <form>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <icon class="fa fa-envelope"></icon>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="邮箱地址">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <icon class="fa fa-user"></icon>
+                                                </span>
+                                                <input type="text" class="form-control" placeholder="姓名">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <icon class="fa fa-phone"></icon>
+                                                </span>
+                                                <input type="text" class="form-control" placeholder="电话">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <textarea placeholder="留言内容" class="form-control" cols="30" rows="5"></textarea>
+                                    </div>
+                                    <div class="m-t">
+                                        <button class="btn btn-block btn-primary">提交</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <div class="footer">
         <div class="container">
@@ -138,8 +239,10 @@
             </div>
         </div>
     </div>
-    <script>
-
+    <script src="./content/js/jquery.min.js"></script>
+    <script src="./content/js/stickUp.min.js"></script>
+    <script type="text/javascript">
+        //多图轮播
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 4,
             spaceBetween: 30,
@@ -155,7 +258,12 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-
+        //固定导航
+        jQuery(function ($) {
+            $(document).ready(function () {
+                $('.navbar-wrapper').stickUp();
+            });
+        });
     </script>
 </body>
 
