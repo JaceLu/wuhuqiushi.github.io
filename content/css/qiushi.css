@@ -366,6 +366,6 @@
   }
   .swiper-button-next,
   .swiper-button-prev {
-    display: none;
+    display: none !important;
   }
 }
