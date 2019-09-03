@@ -17,7 +17,7 @@
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #b3b5b6;
+  background-color: #1f2b35;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -40,6 +40,9 @@
     padding-top: 25px;
     padding-bottom: 25px;
   }
+}
+.navbar-collapse{
+  background: #1b70c0;
 }
 /* form--- */
 .btn-primary {
@@ -73,7 +76,7 @@
   margin-top: 15px;
 }
 /* header--- */
-.header{
+.header {
   width: 100%;
   z-index: 999;
 }
@@ -91,6 +94,7 @@
 }
 .header .navbar-toggle {
   margin-top: 18px;
+  margin-bottom: 18px;
 }
 .navbar-brand {
   float: left;
@@ -108,21 +112,26 @@
 /* banner--- */
 .carousel .jumbotron {
   margin: 0;
-  padding: 150px 0;
+  padding: 140px 0;
   height: 500px;
   color: #4869a5;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  text-align: center;
+}
+.intro {
+  padding: 30px;
+  width: 400px;
+  color: #fff;
+  background-color: rgba(27, 112, 192, 0.4);
 }
 .jumbotron h1,
 .jumbotron .h1 {
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 30px;
 }
 .jumbotron p {
-  font-size: 24px;
+  font-size: 18px;
 }
 /* content--- */
 .content {
@@ -248,6 +257,14 @@
   color: #fff;
   background-color: #1b70c0;
 }
+.article table {
+  border-collapse: collapse;
+  border: 1px solid;
+  clear: none;
+}
+.article table th {
+  text-align: center;
+}
 /* slide */
 .swiper-slide {
   height: 200px;
@@ -332,5 +349,15 @@
   .about__right {
     display: block;
     width: 100%;
+  }
+  .intro {
+    width: auto;
+  }
+  .jumbotron h1, .jumbotron .h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+  .jumbotron p{
+    font-size: 14px;
   }
 }
