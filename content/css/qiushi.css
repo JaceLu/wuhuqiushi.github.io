@@ -41,7 +41,7 @@
     padding-bottom: 25px;
   }
 }
-.navbar-collapse{
+.navbar-collapse {
   background: #1b70c0;
 }
 /* form--- */
@@ -353,11 +353,19 @@
   .intro {
     width: auto;
   }
-  .jumbotron h1, .jumbotron .h1 {
+  .jumbotron h1,
+  .jumbotron .h1 {
     margin-bottom: 30px;
     font-size: 24px;
-}
-  .jumbotron p{
+  }
+  .jumbotron p {
     font-size: 14px;
+  }
+  .swiper-slide {
+    width: 100% !important;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
   }
 }
